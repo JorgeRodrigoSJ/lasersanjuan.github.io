@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <title>CONTACTO</title>
+</head>
+
+<body>
+    <header class="header-nav">
+        <img class="imagen-principal" src="../img/logobarra.png">
+        <nav class="menu-nav">
+            <!--LISTA DESORDENADA-->
+            <UL>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="./fogoneros.html">FOGONEROS</a></li>
+                <li><a href="./parrilleros y hornos.html">PARILLEROS Y HORNOS</a></li>
+                <li><a href="./cortelaser.html">CORTE LASER</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+    <!--<h1>comentarios</h1>-->
+    <main>
+        <section class="contactos">
+            <h1>Deja tus datos y te contacto</h1>
+            <form class="form-container">
+                <!--esta etiqueta genera un borde-->
+                <fieldset class="fieldset">
+                    <legend>Datos de contacto</legend>
+                    <label for="Nombre">Nombre y apellido</label>
+                    <input type="text" name="Nombre" />
+                    <br />
+                    <label for="Mail">Correo electronico</label>
+                    <input type="text" name="Mail" />
+                    <br />
+                    <br />
+                    <div>Indique su consulta</div>
+                    <br />
+                    <select name="producto de interes">
+                        <option value="fogonero">Fogonero</option>
+                        <option value="parrilleros y hornos">Parrilleros y hornos</option>
+                        <option value="corte laser">Corte laser</option>
+                    </select>
+                    <br />
+                    <br />
+                    <div>ingrese algo</div>
+                    <br />
+                    <input type="checkbox" name="info" value="solo info" />solo info
+                    <br />
+                    <input type="checkbox" name="presupuesto" value="presupuesto" />presupuesto
+                    <br />
+                    <br />
+                    <input type="reset" value="limpiar formulario" />
+                    <br />
+                    <br />
+                    <input type="submit" value="enviar info" />
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li>Facebook</li>
+            <li>instagram</li>
+            <li>Datos de contacto</li>
+            <li>atenncion al cliente</li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
