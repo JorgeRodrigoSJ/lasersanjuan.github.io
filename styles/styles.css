@@ -8,7 +8,7 @@
 
 /*HEAD*/
 header {
-    background-color: rgb(208, 204, 174);
+    background-color: #A45C40;
     text-align: center;
     /* este mueve la imagen */
     position: sticky;
@@ -27,7 +27,7 @@ header {
 
 /* body */
 body {
-    background-color: rgba(44, 42, 42, 0.511);
+    background-color: #F6EEE0;
     font-family: 'Kenia';
     margin: 100px;
 }
@@ -50,7 +50,7 @@ h1 {
 .menu-nav ul a {
     font-size: 25px;
     list-style-type: none;
-    background-color: rgb(159, 159, 250);
+    background-color: #C38370;
     text-decoration: none;
     padding: 4px;
     margin: 40px;
@@ -127,12 +127,12 @@ footer ul li {
 }
 
 .header-nav {
-    background-color: #eceadb;
+    background-color:#A45C40;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.imagen-principal {
+.logo-header {
     height: 150px;
     margin: 10px;
     /*esto es para hacer transiciones*/
@@ -140,7 +140,7 @@ footer ul li {
     transition-duration: 4s;
 }
      /*esto es para hacer transiciones*/
-.imagen-principal:hover{
+.logo-header:hover{
     width: 160px;
 }
 .imagen-index {
@@ -214,7 +214,7 @@ footer ul li {
 /*CONTACTOS*/
 .contactos {
     margin: 20px;
-    color: rgb(144, 28, 28);
+    color: #C38370;
     display: flex;
     flex-direction: column;
 }
