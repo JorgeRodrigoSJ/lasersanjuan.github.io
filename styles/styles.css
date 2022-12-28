@@ -70,7 +70,7 @@ footer ul li {
     display: inline-block;
     padding: 4px;
     margin-top: 30px;
-    border-top: 2px solid green;
+    border-top: 2px solid #C38370;
 }
 
 
@@ -132,21 +132,28 @@ footer ul li {
     align-items: center;
     justify-content: center;
 }
+/*aca hago la animacion del logo*/
 .logo-header {
-    height: 150px;
-    margin: 10px;
-    /*esto es para hacer transiciones*/
-    transition-property: width;
-    transition-duration: 4s;
+   animation: ease-in animacion 1s ;
 }
-     /*esto es para hacer transiciones*/
-.logo-header:hover{
-    width: 160px;
-}
+@keyframes animacion {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+} 
+/*aca hago la transiciones*/
+
 .imagen-index {
     height: 382px;
     width: 255px;
 }
+.imagen-index:hover{
+   transform: scale(1.07); 
+}
+
 
 .videos-ejemplos {
     margin: 30px;
@@ -178,7 +185,35 @@ footer ul li {
     height: 350px;
     margin: 20px;
 }
-
+/*aca hago la transiciones*/
+.imag1:hover{
+    transform: scale(1.07); 
+ }
+ .imag2:hover{
+    transform: scale(1.07); 
+ }
+ .imag3:hover{
+    transform: scale(1.07); 
+ }
+ .imag4:hover{
+    transform: scale(1.07); 
+ }
+ .imag5:hover{
+    transform: scale(1.07); 
+ }
+ .imag6:hover{
+    transform: scale(1.07); 
+ }
+ .imag7:hover{
+    transform: scale(1.07); 
+ }
+ .imag8:hover{
+    transform: scale(1.07); 
+ }
+ .imag9:hover{
+    transform: scale(1.07); 
+ }
+ 
 /* PARILLEROS Y HORNOS */
 
 .imagenes-parrilleros {
@@ -194,7 +229,25 @@ footer ul li {
     height: 350px;
     margin: 20px;
 }
-
+/*aca hago la transiciones*/
+.imagenes-parrilleros1:hover{
+    transform: scale(1.07); 
+ }
+ .imagenes-parrilleros2:hover{
+    transform: scale(1.07); 
+ }
+ .imagenes-parrilleros3:hover{
+    transform: scale(1.07); 
+ }
+ .imagenes-parrilleros4:hover{
+    transform: scale(1.07); 
+ }
+ .imagenes-parrilleros5:hover{
+    transform: scale(1.07); 
+ }
+ .imagenes-parrilleros6:hover{
+    transform: scale(1.07); 
+ }
 /* CORTE LASER */
 
 .imagenes-cortelaser{
@@ -209,6 +262,25 @@ footer ul li {
     height: 400px;
     width: 350px;
     margin: 20px;
+}
+/*aca hago la transiciones*/
+.cortelaser1:hover{
+    transform: scale(1.07); 
+ }
+ .cortelaser2:hover{
+    transform: scale(1.07); 
+ }
+ .cortelaser3:hover{
+    transform: scale(1.07); 
+ }
+ .cortelaser4:hover{
+    transform: scale(1.07); 
+ }
+ .cortelaser5:hover{
+    transform: scale(1.07); 
+ }
+ .cortelaser6:hover{
+    transform: scale(1.07); 
 }
 
 /*CONTACTOS*/
