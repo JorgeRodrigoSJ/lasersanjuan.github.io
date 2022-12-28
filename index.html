@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./styles/styles.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!--el archivo css va linkeado al final - para que no me pise los estilos-->
-        <title>LASER SAN JUAN</title>
+        <link rel="stylesheet" href="./styles/styles.css" />
+               <title>LASER SAN JUAN</title>
     </head>
 <body>
     <header class="header-nav">
@@ -32,12 +33,12 @@
 
     <main>
         <section class="imagen-ejemplosflex">
-            <img class="imagen-index" src="./img/imgindex.jpg">
+            <img data-aos="fade-right" data-aos-duration="3000" class="imagen-index" src="./img/imgindex.jpg">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, corrupti possimus? Consequatur ipsum suscipit asperiores magni tenetur temporibus. Repellat provident voluptatibus eveniet excepturi minus ullam mollitia necessitatibus maiores quisquam similique.</p>
         </section>
         <section class="imagen-ejemplosflex-reverse">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officia explicabo nobis provident excepturi adipisci, magni fuga optio nam porro molestias neque magnam soluta accusantium veritatis ipsam delectus fugit nemo.</p>
-            <img class="imagen-index" src="./img/imgindex2.jpg">
+            <img data-aos="fade-left" data-aos-duration="3000" class="imagen-index" src="./img/imgindex2.jpg">
         </section>
         <section class="imagen-ejemplos">
             <img class="imagen-index" src="./img/imgindex3.jpg">
@@ -66,6 +67,10 @@
             <li>Datos de contacto</li>
             <li>atenncion al cliente</li>
         </ul>
-    </footer>         
+    </footer>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>       
 </body>
 </html>
