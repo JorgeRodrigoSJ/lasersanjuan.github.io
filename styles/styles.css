@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kenia&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&family=Zen+Dots&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
 /* RESET DE CSS*/
 * {
     margin: 0px;
@@ -9,26 +9,22 @@
 /*HEAD*/
 header {
     background-color: #A45C40;
-    text-align: center;
-    /* este mueve la imagen */
-    position: sticky;
     top: 0px;
     padding: 5px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
 }
 
-.header nav ul{
+.header-nav ul{
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
-
 /* body */
 body {
     background-color: #F6EEE0;
-    font-family: 'Kenia';
+    font-family: 'Raleway', sans-serif;
+    /*font-family: 'Kenia';*/
     margin: 100px;
 }
 
@@ -45,6 +41,8 @@ h1 {
 
 .menu-nav ul li {
     display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 .menu-nav ul a {
@@ -334,14 +332,22 @@ footer ul li {
 @media only screen and (max-width: 768px){
 
     /*index*/
-    .header-nav{
+    .header-nav {
+        background-color: #A45C40;
+        display: flex;
         flex-direction: column;
-        position: static;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .menu-nav ul li{
-        display: flex;
+        flex-direction: column;
         justify-content: center;
-        text-align: center
+        text-align: center;
     }
     .imagen-ejemplosflex{
         flex-direction: column;
@@ -387,19 +393,19 @@ footer ul li {
     }
 }
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 576px) {
     /*estilos generales - aca se ponen los comportamientos distintos para esta medida*/
     .header {
         flex-direction: column;
     }
     /*index*/
-   .header-nav{
+    .header-nav ul {
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        position: static;
     }
     .menu-nav ul li{
-        display: flex;
+        flex-direction: column;
         justify-content: center;
         text-align: center;
     }
@@ -446,5 +452,4 @@ footer ul li {
         flex-direction: column;
         align-items: center;
     }
-    
 }
