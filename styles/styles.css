@@ -55,7 +55,13 @@ h1 {
     padding: 4px;
     margin: 40px;
     font-weight: bolder;
-
+    /*color de la letra*/
+    color: rgb(6, 6, 6);
+}
+.titulo {
+    text-align: center;
+    font-size: 35px;
+    margin: 25px;
 }
 
 footer {
@@ -117,7 +123,6 @@ footer ul li {
 }
 
 .parrafo-h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 30px;
 }
 
@@ -170,6 +175,12 @@ footer ul li {
 
 /* FOGONERO */
 
+.parrafo-fogonero{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 30px;
+}
+
 /* vamos a acomodar la galeria de imagenes con flexbox */
 
 .imagenes-fogoneros {
@@ -215,7 +226,11 @@ footer ul li {
  }
  
 /* PARILLEROS Y HORNOS */
-
+.parrafo-parrillerosyhorno{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 30px;
+}
 .imagenes-parrilleros {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -249,7 +264,11 @@ footer ul li {
     transform: scale(1.07); 
  }
 /* CORTE LASER */
-
+.parrafo-cortelaser{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 30px;
+}
 .imagenes-cortelaser{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
