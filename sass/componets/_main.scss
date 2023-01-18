@@ -1,0 +1,141 @@
+/*-------INDEX--------*/
+h1{
+    text-align: center;
+    font-size: 35px;
+    margin: 25px; 
+}
+.titulo{
+    text-align: center;
+    font-size: 35px;
+    margin: 25px;
+}
+.imagen-ejemplosflex{
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+        p{
+        padding: 20px;
+        font-size: 1.6rem;
+        letter-spacing: 1px;  
+    }
+}
+.imagen-ejemplosflex-reverse{
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    p{
+        padding: 20px;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+
+}
+.imagen-ejemplos{
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    p{
+        padding: 20px;
+        font-size: 1.6rem;
+        letter-spacing: 1px;   
+    }
+}
+.videos-ejemplos{
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 80px;
+    iframe{
+        height: 315px;
+        width: 560px;
+    }
+}
+/*FOGONEROS*/
+.parrafo-fogonero {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 30px;
+  }
+  .imagenes-fogoneros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    img{
+        width: 350px;
+        height: 350px;
+        margin: 20px;
+        &:hover{
+            transform: scale(1.07);
+        }
+    }
+  }
+  /* PARILLEROS Y HORNOS */
+  .parrafo-parrillerosyhorno {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 30px;
+  }
+  .imagenes-parrilleros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    img {
+        width: 350px;
+        height: 350px;
+        margin: 20px;
+        &:hover{
+            transform: scale(1.07);
+        }
+      }
+  }
+  /* CORTE LASER */
+.parrafo-cortelaser {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 30px;
+  }
+  .imagenes-cortelaser {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    img {
+        height: 400px;
+        width: 350px;
+        margin: 20px;
+        &:hover{
+            transform: scale(1.07);
+        }
+      }
+  }
+  /*CONTACTOS*/
+.contactos {
+    margin: 20px;
+    color: #C38370;
+    display: flex;
+    flex-direction: column;
+    form{
+        display: flex;
+        justify-content: center;
+        fieldset {
+            padding: 100px;
+            font-size: 1.5rem;
+            margin: 20px 100px 0 100px;
+            background-color: rgba(59, 44, 44, 0.2588235294);
+            border: 10px solid;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+  }

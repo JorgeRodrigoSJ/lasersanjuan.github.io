@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Kenia&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&family=Zen+Dots&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap");
+/* RESET DE CSS*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.logo-header {
+  animation: ease-in animacion 1s;
+}
+
+@keyframes animacion {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+body {
+  background-color: #F6EEE0;
+  font-family: "Raleway", sans-serif;
+  /*font-family: 'Kenia';*/
+  margin: 100px;
+}
+body header {
+  background-color: #A45C40;
+  top: 0px;
+  padding: 5px;
+}
+body header .logo-header {
+  /*aca tengo que agregar la animacion-*/
+}
+body header .nav-link {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+body header .nav-link:hover {
+  color: aliceblue;
+}
+
+h1 {
+  text-align: center;
+  font-size: 35px;
+  margin: 25px;
+}
+
+/*-------INDEX--------*/
+h1 {
+  text-align: center;
+  font-size: 35px;
+  margin: 25px;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 35px;
+  margin: 25px;
+}
+
+.imagen-ejemplosflex {
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.imagen-ejemplosflex p {
+  padding: 20px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.imagen-ejemplosflex-reverse {
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.imagen-ejemplosflex-reverse p {
+  padding: 20px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.imagen-ejemplos {
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+.imagen-ejemplos p {
+  padding: 20px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.videos-ejemplos {
+  margin: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 80px;
+}
+.videos-ejemplos iframe {
+  height: 315px;
+  width: 560px;
+}
+
+/*FOGONEROS*/
+.parrafo-fogonero {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 30px;
+}
+
+.imagenes-fogoneros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+.imagenes-fogoneros img {
+  width: 350px;
+  height: 350px;
+  margin: 20px;
+}
+.imagenes-fogoneros img:hover {
+  transform: scale(1.07);
+}
+
+/* PARILLEROS Y HORNOS */
+.parrafo-parrillerosyhorno {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 30px;
+}
+
+.imagenes-parrilleros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+.imagenes-parrilleros img {
+  width: 350px;
+  height: 350px;
+  margin: 20px;
+}
+.imagenes-parrilleros img:hover {
+  transform: scale(1.07);
+}
+
+/* CORTE LASER */
+.parrafo-cortelaser {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 30px;
+}
+
+.imagenes-cortelaser {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+.imagenes-cortelaser img {
+  height: 400px;
+  width: 350px;
+  margin: 20px;
+}
+.imagenes-cortelaser img:hover {
+  transform: scale(1.07);
+}
+
+/*CONTACTOS*/
+.contactos {
+  margin: 20px;
+  color: #C38370;
+  display: flex;
+  flex-direction: column;
+}
+.contactos form {
+  display: flex;
+  justify-content: center;
+}
+.contactos form fieldset {
+  padding: 100px;
+  font-size: 1.5rem;
+  margin: 20px 100px 0 100px;
+  background-color: rgba(59, 44, 44, 0.2588235294);
+  border: 10px solid;
+  display: flex;
+  flex-direction: column;
+}
+
+/*------FOOTER-----*/
+footer {
+  font-size: 1.8rem;
+  color: black;
+  text-align: center;
+  margin: 10px;
+}
+footer ul li {
+  display: flex;
+  display: inline-block;
+  padding: 4px;
+  margin-top: 30px;
+}
+footer ul li:hover {
+  color: rgb(205, 35, 20);
+}
+footer ul li .bi {
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  /*index*/
+  .logo-header {
+    animation: ease-in animacion 1s;
+  }
+  @keyframes animacion {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  header .nav-link:hover {
+    color: aliceblue;
+  }
+  .imagen-ejemplosflex {
+    flex-direction: column;
+  }
+  .imagen-ejemplosflex-reverse {
+    flex-direction: column-reverse;
+  }
+  .imagen-ejemplos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .videos-ejemplos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .videos-ejemplos iframe {
+    height: 315px;
+    width: 560px;
+  }
+  /*fogoneros*/
+  .imagenes-fogoneros {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+  }
+  /*parrilleros y hornos*/
+  .imagenes-parrilleros {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  /*corte laser*/
+  .imagenes-cortelaser {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  /*contactos*/
+  .fieldset {
+    margin: 20px 50px 0 0px;
+    flex-direction: column;
+  }
+  .contactos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .logo-header {
+    animation: ease-in animacion 1s;
+  }
+  @keyframes animacion {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  header .nav-link:hover {
+    color: aliceblue;
+  }
+  .header {
+    flex-direction: column;
+  }
+  /*index*/
+  .imagen-ejemplosflex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imagen-ejemplosflex-reverse {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .imagen-ejemplos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .videos-ejemplos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .videos-ejemplos iframe {
+    height: 215px;
+    width: 460px;
+  }
+  /*fogoneros*/
+  .imagenes-fogoneros {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+  }
+  /*parrilleros y hornos*/
+  .imagenes-parrilleros {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+  }
+  /*corte laser*/
+  .imagenes-cortelaser {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+  }
+  /*contactos*/
+  .fieldset {
+    margin: 20px 100px 0 0px;
+  }
+  .contactos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-container {
+    margin: 0 0 0 100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
