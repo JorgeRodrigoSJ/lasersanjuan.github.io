@@ -1,7 +1,7 @@
 /*------FOOTER-----*/
 footer{
     font-size: 1.8rem;
-    color: black;
+    color: $negro;
     text-align: center;
     margin: 10px;
     ul{
@@ -11,7 +11,7 @@ footer{
             padding: 4px;
             margin-top: 30px;
             &:hover{
-            color:rgb(205, 35, 20);    
+            color:$colorhover;    
             }
             .bi {
                 font-size: 3rem;

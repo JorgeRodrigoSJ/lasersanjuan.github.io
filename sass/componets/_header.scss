@@ -1,17 +1,17 @@
 body{
-     background-color: #F6EEE0;
+     background-color:$colorbase;
      font-family: "Raleway", sans-serif;
      /*font-family: 'Kenia';*/
      margin: 100px;
         header{
-            background-color: #A45C40;
+            background-color: $colorheader;
             top: 0px;
             padding: 5px;
             .logo-header{
                 /*aca tengo que agregar la animacion-*/
             }
              .nav-link {
-                color: black;
+                color:$negro;
                 font-size: 1.6rem;
                 font-weight: bold;
                 &:hover{
@@ -22,7 +22,19 @@ body{
 }
 
 h1{
-    text-align: center;
-    font-size: 35px;
-    margin: 25px;
+    @extend %formatoh1
     }
+
+
+.logo-header {
+        animation: ease-in animacion 1s;
+      }
+      
+      @keyframes animacion {
+        0% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }

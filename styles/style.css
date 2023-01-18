@@ -7,20 +7,14 @@
   box-sizing: border-box;
 }
 
-.logo-header {
-  animation: ease-in animacion 1s;
+.titulo, h1 {
+  text-align: center;
+  font-size: 35px;
+  margin: 25px;
 }
 
-@keyframes animacion {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 body {
-  background-color: #F6EEE0;
+  background-color: #f6eee0;
   font-family: "Raleway", sans-serif;
   /*font-family: 'Kenia';*/
   margin: 100px;
@@ -42,25 +36,19 @@ body header .nav-link:hover {
   color: aliceblue;
 }
 
-h1 {
-  text-align: center;
-  font-size: 35px;
-  margin: 25px;
+.logo-header {
+  animation: ease-in animacion 1s;
 }
 
+@keyframes animacion {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*-------INDEX--------*/
-h1 {
-  text-align: center;
-  font-size: 35px;
-  margin: 25px;
-}
-
-.titulo {
-  text-align: center;
-  font-size: 35px;
-  margin: 25px;
-}
-
 .imagen-ejemplosflex {
   margin: 30px;
   padding: 20px;
@@ -215,7 +203,7 @@ footer ul li {
   margin-top: 30px;
 }
 footer ul li:hover {
-  color: rgb(205, 35, 20);
+  color: #cd2314;
 }
 footer ul li .bi {
   font-size: 3rem;

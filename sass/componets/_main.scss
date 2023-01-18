@@ -1,13 +1,9 @@
 /*-------INDEX--------*/
 h1{
-    text-align: center;
-    font-size: 35px;
-    margin: 25px; 
+    @extend %formatoh1 
 }
 .titulo{
-    text-align: center;
-    font-size: 35px;
-    margin: 25px;
+    @extend %formatoh1
 }
 .imagen-ejemplosflex{
     margin: 30px;
