@@ -7,16 +7,3 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
-.logo-header {
-  animation: ease-in animacion 1s;
-}
-
-@keyframes animacion {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
