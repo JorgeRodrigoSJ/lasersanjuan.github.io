@@ -1,21 +1,56 @@
 /*------FOOTER-----*/
-footer{
-    font-size: 1.8rem;
-    color: $negro;
-    text-align: center;
-    margin: 10px;
-    ul{
-        li{
+.pie-pagina{
+    width: 100%;
+    background-color:$colorheader
+    }
+.grupo-1{
+    width: 100%; 
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+        figure{
+            width: 100%;
+            height: 100%;
             display: flex;
-            display: inline-block;
-            padding: 4px;
-            margin-top: 30px;
-            &:hover{
-            color:$colorhover;    
+            justify-content:center;
+            align-items:center;
+                img {
+                    width: 250px;
+                }
             }
-            .bi {
-                font-size: 3rem;
+        h2 {
+            color:$negro;
+            margin-bottom: 25px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        p{
+            color:$negro;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+        .red-social{
+            a{
+                font-size: 2rem;
+                display: inline-block;
+                text-decoration: none;
+                width: 80px;
+                height: 80px;
+                line-height: 80px;
+                color:$negro;
+                background-color: $colorbase;
+                text-align: center;
+                &:hover{
+                    color: $colorhover;
+                }
             }
         }
     }
-}
+    .grupo-2 { 
+        font-size: 1.5rem;
+        padding: 15px 10px;
+        text-align: center;      
+        }

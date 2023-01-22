@@ -2,19 +2,20 @@
 h1{
     @extend %formatoh1 
 }
+h2{
+    margin-top: 40px;
+}
 .titulo{
     @extend %formatoh1
 }
-.imagen-ejemplosflex{
+.imagen-ejemplosflex {
     margin: 30px;
     padding: 20px;
     display: flex;
     align-items: center;
         p{
-        padding: 20px;
-        font-size: 1.6rem;
-        letter-spacing: 1px;  
-    }
+            @extend %formato-p  
+         }
 }
 .imagen-ejemplosflex-reverse{
     margin: 30px;
@@ -22,9 +23,7 @@ h1{
     display: flex;
     align-items: center;
     p{
-        padding: 20px;
-        font-size: 1.6rem;
-        letter-spacing: 1px;
+        @extend %formato-p
     }
 
 }
@@ -35,9 +34,7 @@ h1{
     justify-content: center;
     gap: 80px;
     p{
-        padding: 20px;
-        font-size: 1.6rem;
-        letter-spacing: 1px;   
+        @extend %formato-p   
     }
 }
 .videos-ejemplos{
@@ -48,8 +45,7 @@ h1{
     align-items: center;
     gap: 80px;
     iframe{
-        height: 315px;
-        width: 560px;
+        @extend %iframe
     }
 }
 /*FOGONEROS*/
@@ -65,10 +61,8 @@ h1{
     gap: 20px;
     justify-items: center;
     img{
-        width: 350px;
-        height: 350px;
-        margin: 20px;
-        &:hover{
+        @extend %formato-img;
+        &:hover {
             transform: scale(1.07);
         }
     }
@@ -86,9 +80,7 @@ h1{
     gap: 20px;
     justify-items: center;
     img {
-        width: 350px;
-        height: 350px;
-        margin: 20px;
+        @extend %formato-img;
         &:hover{
             transform: scale(1.07);
         }
@@ -107,9 +99,7 @@ h1{
     gap: 20px;
     justify-items: center;
     img {
-        height: 400px;
-        width: 350px;
-        margin: 20px;
+        @extend %formato-img;
         &:hover{
             transform: scale(1.07);
         }

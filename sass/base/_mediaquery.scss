@@ -38,6 +38,19 @@
      height: 315px;
      width: 560px;
    }
+   /*footer*/
+   .grupo-1{
+      width: 90%;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap: 30px;
+      padding: 35px 0px;
+      text-align: center;
+      figure{
+        img{
+          width: 180px;
+        }
+      }
+   }
    /*fogoneros*/
    .imagenes-fogoneros {
      grid-template-columns: repeat(1, 1fr);
@@ -110,6 +123,19 @@
      height: 215px;
      width: 460px;
    }
+   /*footer*/
+   .grupo-1{
+    width: 80%;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+    text-align: center;
+    figure{
+      img{
+        width: 150px;
+      }
+    }
+ }
    /*fogoneros*/
    .imagenes-fogoneros {
      grid-template-columns: repeat(1, 1fr);

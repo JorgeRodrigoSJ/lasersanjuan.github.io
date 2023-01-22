@@ -4,7 +4,24 @@ $colorbase:#f6eee0;
 $colorheader:#A45C40;
 %formatoh1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 3rem;
     margin: 25px;
+    color:$negro;
+    font-weight: bold; 
   }
-  
+%formato-img {
+  width: 350px;
+  height: 350px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px black;
+  }
+
+%formato-p {
+  padding: 20px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+%iframe {
+  height: 315px;
+  width: 560px;
+}
