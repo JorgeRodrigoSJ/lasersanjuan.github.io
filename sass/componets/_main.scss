@@ -9,8 +9,7 @@ h2{
     @extend %formatoh1
 }
 .imagen-ejemplosflex {
-    margin: 30px;
-    padding: 20px;
+    @include sizes(30px, 20px);
     display: flex;
     align-items: center;
         p{
@@ -18,8 +17,7 @@ h2{
          }
 }
 .imagen-ejemplosflex-reverse{
-    margin: 30px;
-    padding: 20px;
+    @include sizes(30px, 20px);
     display: flex;
     align-items: center;
     p{
@@ -28,8 +26,7 @@ h2{
 
 }
 .imagen-ejemplos{
-    margin: 30px;
-    padding: 20px;
+    @include sizes(30px, 20px);
     display: flex;
     justify-content: center;
     gap: 80px;
@@ -38,8 +35,7 @@ h2{
     }
 }
 .videos-ejemplos{
-    margin: 30px;
-    padding: 20px;
+    @include sizes(30px, 20px);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
