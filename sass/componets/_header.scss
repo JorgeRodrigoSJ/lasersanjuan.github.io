@@ -1,16 +1,12 @@
 body{
      background-color:$colorbase;
      font-family: "Raleway", sans-serif;
-     /*font-family: 'Kenia';*/
      margin: 50px;
         header{
             background-color: $colorheader;
             top: 0px;
             padding: 5px;
-            .logo-header{
-                /*aca tengo que agregar la animacion-*/
-            }
-             .nav-link {
+            .nav-link {
                 color:$negro;
                 font-size: 1.6rem;
                 font-weight: bold;
@@ -18,6 +14,10 @@ body{
                     color: aliceblue;
                 }
                 }
+                .navbar-collapse{
+                  justify-content: center;
+                }
+              
             }
 }
 

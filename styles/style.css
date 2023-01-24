@@ -36,16 +36,12 @@
 body {
   background-color: #f6eee0;
   font-family: "Raleway", sans-serif;
-  /*font-family: 'Kenia';*/
   margin: 50px;
 }
 body header {
   background-color: #A45C40;
   top: 0px;
   padding: 5px;
-}
-body header .logo-header {
-  /*aca tengo que agregar la animacion-*/
 }
 body header .nav-link {
   color: black;
@@ -54,6 +50,9 @@ body header .nav-link {
 }
 body header .nav-link:hover {
   color: aliceblue;
+}
+body header .navbar-collapse {
+  justify-content: center;
 }
 
 .logo-header {
