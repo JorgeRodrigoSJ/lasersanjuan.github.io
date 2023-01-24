@@ -25,3 +25,11 @@ $colorheader:#A45C40;
   height: 315px;
   width: 560px;
 }
+@mixin sizes ($margin, $padding){
+  margin: $margin;
+  padding: $padding;
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}

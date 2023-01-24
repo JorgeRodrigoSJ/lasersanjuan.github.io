@@ -37,7 +37,7 @@ body {
   background-color: #f6eee0;
   font-family: "Raleway", sans-serif;
   /*font-family: 'Kenia';*/
-  margin: 100px;
+  margin: 30px;
 }
 body header {
   background-color: #A45C40;
@@ -89,15 +89,15 @@ h2 {
   margin: 30px;
   padding: 20px;
   display: flex;
-  justify-content: center;
+  align-items: center;
   gap: 80px;
 }
 .videos-ejemplos {
   margin: 30px;
   padding: 20px;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-evenly;
   gap: 80px;
 }
 /*FOGONEROS*/
