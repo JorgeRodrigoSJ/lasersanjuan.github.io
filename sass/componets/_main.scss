@@ -26,10 +26,18 @@ h2{
 .imagen-ejemplos{
     @include sizes(30px, 20px);
     @include flex-center;
-    gap: 80px;
+    gap: 50px;
+
+    .imagen-index {
+    box-shadow: 0px 0px 10px black;  
+    &:hover {
+        transform: scale(1.07);
+            } 
+        }
+
     p{
         @extend %formato-p   
-    }
+        }
 }
 .videos-ejemplos{
     @include sizes(30px, 20px);
