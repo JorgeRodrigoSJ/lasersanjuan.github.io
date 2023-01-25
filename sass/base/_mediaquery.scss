@@ -76,8 +76,9 @@
      align-items: center;
    }
  }
- @media only screen and (max-width: 576px) {
-  
+
+@media only screen and (max-width: 576px) {
+
   .logo-header {
     animation: ease-in animacion 1s;
   }
@@ -103,6 +104,13 @@
      flex-direction: column;
    }
    /*index*/
+   %formatoh1 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 10px;
+    color:$negro;
+    font-weight: bold; 
+   }
    .imagen-ejemplosflex {
      flex-direction: column;
      align-items: center;
