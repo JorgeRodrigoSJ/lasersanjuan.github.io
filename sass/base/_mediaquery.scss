@@ -182,7 +182,7 @@
      width: 460px;
    }
    /*footer*/
-   .grupo-1{
+  .grupo-1{
     width: 80%;
     grid-template-columns: repeat(1,1fr);
     grid-gap: 30px;
@@ -191,7 +191,7 @@
     figure{
       img{
         width: 150px;
-      }
+        }
     }
  }
    /*fogoneros*/
@@ -209,16 +209,14 @@
      grid-template-columns: repeat(1, 1fr);
      grid-template-rows: repeat(9, 1fr);
    }
-   /*contactos*/
-   .fieldset {
-     margin: 20px 100px 0 0px;
-   }
-   .contactos {
-     flex-direction: column;
-     align-items: center;
-   }
-   .form-container{
-     margin: 0 0 0 100px;
-   }
- }
- 
+   /*CONTACTOS*/
+  .contactos {
+    margin: 10px;
+    form{
+        fieldset {
+            padding: 20px;
+            font-size: 1.6rem;
+          }
+    }
+  }
+  }
