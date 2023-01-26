@@ -251,8 +251,12 @@ h2 {
       transform: scale(1);
     }
   }
-  header .nav-link:hover {
+  .nav-link {
+    margin-left: 30px;
+  }
+  .nav-link:hover {
     color: aliceblue;
+    transform: scale(1.05);
   }
   h1, .titulo {
     font-size: 1.6rem;
@@ -339,6 +343,13 @@ h2 {
 @media only screen and (max-width: 576px) {
   .logo-header {
     animation: ease-in animacion 1s;
+  }
+  .nav-link {
+    margin-left: 30px;
+  }
+  .nav-link:hover {
+    color: aliceblue;
+    transform: scale(1.05);
   }
   @keyframes animacion {
     0% {
