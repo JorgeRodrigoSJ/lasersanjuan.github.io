@@ -50,6 +50,7 @@ body header .nav-link {
 }
 body header .nav-link:hover {
   color: aliceblue;
+  transform: scale(1.1);
 }
 body header .navbar-collapse {
   justify-content: center;
@@ -258,10 +259,6 @@ h2 {
     margin: 0px;
     padding: 10px;
   }
-  h2 {
-    font-size: 1.6rem;
-    padding: 10px;
-  }
   .imagen-ejemplosflex p, .imagen-ejemplosflex-reverse p, .imagen-ejemplos p {
     padding: 0px;
   }
@@ -270,32 +267,36 @@ h2 {
     font-family: "Raleway", sans-serif;
     margin: 0px;
   }
-  .imagen-ejemplosflex {
+  body h2 {
+    font-size: 1.6rem;
+    padding: 10px;
+  }
+  body .imagen-ejemplosflex {
     margin: 0px;
     padding: 10px;
     flex-direction: column;
   }
-  .imagen-ejemplosflex-reverse {
+  body .imagen-ejemplosflex-reverse {
     margin: 0px;
     padding: 10px;
     flex-direction: column-reverse;
   }
-  .imagen-ejemplos {
+  body .imagen-ejemplos {
     margin: 0px;
     padding: 10px;
     flex-direction: column;
     align-items: center;
   }
-  .imagen-ejemplos .imagen-index {
+  body .imagen-ejemplos .imagen-index {
     width: 90%;
     height: 90%;
     box-shadow: 0px 0px 10px black;
   }
-  .videos-ejemplos {
+  body .videos-ejemplos {
     flex-direction: column;
     align-items: center;
   }
-  .videos-ejemplos iframe {
+  body .videos-ejemplos iframe {
     height: 315px;
     width: 560px;
   }
@@ -352,6 +353,12 @@ h2 {
   }
   .header {
     flex-direction: column;
+  }
+  .parrafo-h2 {
+    font-size: 1.3rem;
+  }
+  .imagen-ejemplosflex p, .imagen-ejemplosflex-reverse p, .imagen-ejemplos p {
+    font-size: 1.3rem;
   }
   /*index*/
   h1, .titulo {
