@@ -1,27 +1,33 @@
 @media only screen and (max-width: 768px) {
     /*index*/
-    .logo-header {
-      animation: ease-in animacion 1s;
+    .container-fluid{
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+        .logo-header {
+          animation: ease-in animacion 1s;
+         }
+        .navbar-nav{
+         flex-direction: column;
+         row-gap: 15px;
+          .nav-link {
+            &:hover{
+                color: aliceblue;
+                transform: scale(1.05);
+                }
+              }
+        }
+  
     }
 
-    @keyframes animacion {
+  @keyframes animacion {
       0% {
         transform: scale(0);
       }
       100% {
         transform: scale(1);
       }
-    }
-  
-   
-    .nav-link {
-      margin-left: 30px;
-        &:hover{
-            color: aliceblue;
-            transform: scale(1.05);
-            }
-          }
-    
+    }  
 
   %formatoh1 {
     font-size: 1.6rem; 
@@ -114,17 +120,26 @@
  }
 
 @media only screen and (max-width: 576px) {
+  .container-fluid{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+      .logo-header {
+        animation: ease-in animacion 1s;
+       }
+      .navbar-nav{
+       flex-direction: column;
+       row-gap: 15px;
+        .nav-link {
+          &:hover{
+              color: aliceblue;
+              transform: scale(1.05);
+              }
+            }
+      }
 
-  .logo-header {
-    animation: ease-in animacion 1s;
   }
-  .nav-link {
-    margin-left: 30px;
-      &:hover{
-          color: aliceblue;
-          transform: scale(1.05);
-          }
-        }
+   
 
   @keyframes animacion {
     0% {
@@ -193,7 +208,7 @@
         width: 150px;
         }
     }
- }
+  }
    /*fogoneros*/
    .imagenes-fogoneros {
      grid-template-columns: repeat(1, 1fr);

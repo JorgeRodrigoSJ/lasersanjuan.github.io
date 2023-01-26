@@ -240,8 +240,21 @@ h2 {
 
 @media only screen and (max-width: 768px) {
   /*index*/
-  .logo-header {
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .container-fluid .logo-header {
     animation: ease-in animacion 1s;
+  }
+  .container-fluid .navbar-nav {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .container-fluid .navbar-nav .nav-link:hover {
+    color: aliceblue;
+    transform: scale(1.05);
   }
   @keyframes animacion {
     0% {
@@ -250,13 +263,6 @@ h2 {
     100% {
       transform: scale(1);
     }
-  }
-  .nav-link {
-    margin-left: 30px;
-  }
-  .nav-link:hover {
-    color: aliceblue;
-    transform: scale(1.05);
   }
   h1, .titulo {
     font-size: 1.6rem;
@@ -341,13 +347,19 @@ h2 {
   }
 }
 @media only screen and (max-width: 576px) {
-  .logo-header {
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .container-fluid .logo-header {
     animation: ease-in animacion 1s;
   }
-  .nav-link {
-    margin-left: 30px;
+  .container-fluid .navbar-nav {
+    flex-direction: column;
+    row-gap: 15px;
   }
-  .nav-link:hover {
+  .container-fluid .navbar-nav .nav-link:hover {
     color: aliceblue;
     transform: scale(1.05);
   }
