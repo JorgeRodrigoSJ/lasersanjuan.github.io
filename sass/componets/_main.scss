@@ -45,7 +45,8 @@ h2{
     justify-content: space-evenly;
     gap: 80px;
     iframe{
-        @extend %iframe
+        height: 315px;
+        width: 560px;
     }
 }
 /* FOGONEROS */
@@ -105,7 +106,7 @@ h2{
         }
       }
   }
-/*CONTACTOS*/
+  /*CONTACTOS*/
 .contactos {
     margin: 20px;
     color: #C38370;

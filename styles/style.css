@@ -28,11 +28,6 @@
   letter-spacing: 1px;
 }
 
-.videos-ejemplos iframe {
-  height: 315px;
-  width: 560px;
-}
-
 body {
   background-color: #f6eee0;
   font-family: "Raleway", sans-serif;
@@ -106,6 +101,11 @@ h2 {
   justify-content: space-evenly;
   gap: 80px;
 }
+.videos-ejemplos iframe {
+  height: 315px;
+  width: 560px;
+}
+
 /* FOGONEROS */
 .parrafo-fogonero {
   text-align: center;
@@ -347,103 +347,9 @@ h2 {
   }
 }
 @media only screen and (max-width: 576px) {
-  .container-fluid {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-  }
-  .container-fluid .logo-header {
-    animation: ease-in animacion 1s;
-  }
-  .container-fluid .navbar-nav {
-    flex-direction: column;
-    row-gap: 15px;
-  }
-  .container-fluid .navbar-nav .nav-link:hover {
-    color: aliceblue;
-    transform: scale(1.05);
-  }
-  @keyframes animacion {
-    0% {
-      transform: scale(0);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  header .nav-link:hover {
-    color: aliceblue;
-  }
-  .header {
-    flex-direction: column;
-  }
-  .parrafo-h2 {
-    font-size: 1.3rem;
-  }
-  .imagen-ejemplosflex p, .imagen-ejemplosflex-reverse p, .imagen-ejemplos p {
-    font-size: 1.3rem;
-  }
-  /*index*/
-  h1, .titulo {
-    text-align: center;
-    font-size: 1.3rem;
-    margin: 10px;
-    color: black;
-    font-weight: bold;
-  }
-  .imagen-ejemplosflex {
-    flex-direction: column;
-    align-items: center;
-  }
-  .imagen-ejemplosflex-reverse {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .imagen-ejemplos {
-    flex-direction: column;
-    align-items: center;
-  }
-  .videos-ejemplos {
-    flex-direction: column;
-    align-items: center;
-  }
-  .videos-ejemplos iframe {
-    height: 215px;
-    width: 460px;
-  }
-  /*footer*/
-  .grupo-1 {
-    width: 80%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
-    text-align: center;
-  }
-  .grupo-1 figure img {
-    width: 150px;
-  }
-  /*fogoneros*/
-  .imagenes-fogoneros {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-  }
-  /*parrilleros y hornos*/
-  .imagenes-parrilleros {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-  }
-  /*corte laser*/
-  .imagenes-cortelaser {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-  }
-  /*CONTACTOS*/
-  .contactos {
-    margin: 10px;
-  }
-  .contactos form fieldset {
-    padding: 20px;
-    font-size: 1.6rem;
+  body .videos-ejemplos iframe {
+    height: 315px;
+    width: 450px;
   }
 }
 
