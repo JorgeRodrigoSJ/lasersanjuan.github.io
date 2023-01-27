@@ -9,7 +9,7 @@
 
 .titulo, h1 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 25px;
   color: black;
   font-weight: bold;
@@ -22,10 +22,15 @@
   box-shadow: 0px 0px 10px black;
 }
 
-.imagen-ejemplos p, .imagen-ejemplosflex-reverse p, .imagen-ejemplosflex p {
+.parrafo-cortelaser, .parrafo-parrillerosyhorno, .parrafo-fogonero, .imagen-ejemplos p, .imagen-ejemplosflex-reverse p, .imagen-ejemplosflex p {
   padding: 20px;
   font-size: 1.6rem;
   letter-spacing: 1px;
+}
+
+.videos-ejemplos iframe {
+  height: 315px;
+  width: 560px;
 }
 
 body {
@@ -101,16 +106,9 @@ h2 {
   justify-content: space-evenly;
   gap: 80px;
 }
-.videos-ejemplos iframe {
-  height: 315px;
-  width: 560px;
-}
-
 /* FOGONEROS */
 .parrafo-fogonero {
   text-align: center;
-  font-size: 1.5em;
-  margin: 30px;
 }
 
 .imagenes-fogoneros {
@@ -127,8 +125,6 @@ h2 {
 /* PARILLEROS Y HORNOS */
 .parrafo-parrillerosyhorno {
   text-align: center;
-  font-size: 1.5em;
-  margin: 30px;
 }
 
 .imagenes-parrilleros {
@@ -145,8 +141,6 @@ h2 {
 /* CORTE LASER */
 .parrafo-cortelaser {
   text-align: center;
-  font-size: 1.5em;
-  margin: 30px;
 }
 
 .imagenes-cortelaser {
@@ -200,8 +194,8 @@ h2 {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .grupo-1 figure img {
   width: 250px;
@@ -267,9 +261,10 @@ h2 {
   h1, .titulo {
     font-size: 1.6rem;
     margin: 0px;
-    padding: 10px;
+    padding: 20px;
+    margin-top: 10px;
   }
-  .imagen-ejemplosflex p, .imagen-ejemplosflex-reverse p, .imagen-ejemplos p {
+  .imagen-ejemplosflex p, .imagen-ejemplosflex-reverse p, .imagen-ejemplos p, .parrafo-fogonero, .parrafo-parrillerosyhorno, .parrafo-cortelaser {
     padding: 0px;
   }
   body {

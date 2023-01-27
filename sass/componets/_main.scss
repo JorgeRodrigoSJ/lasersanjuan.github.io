@@ -1,7 +1,4 @@
 /*-------INDEX--------*/
-h1{
-    @extend %formatoh1 
-}
 h2{
     margin-top: 40px;
 }
@@ -29,15 +26,14 @@ h2{
     gap: 50px;
 
     .imagen-index {
-    box-shadow: 0px 0px 10px black;  
-    &:hover {
-        transform: scale(1.07);
+        box-shadow: 0px 0px 10px black;  
+        &:hover {
+            transform: scale(1.07);
             } 
         }
-
-    p{
+    p {
         @extend %formato-p   
-        }
+    }
 }
 .videos-ejemplos{
     @include sizes(30px, 20px);
@@ -45,39 +41,34 @@ h2{
     justify-content: space-evenly;
     gap: 80px;
     iframe{
-        height: 315px;
-        width: 560px;
+        @extend %iframe
     }
 }
 /* FOGONEROS */
 .parrafo-fogonero {
     text-align: center;
-    font-size: 1.5em;
-    margin: 30px;
-  }
+    @extend %formato-p
+    }
+
   .imagenes-fogoneros {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    @include grid-template-columns;
     gap: 20px;
     justify-items: center;
-    img{
-        @extend %formato-img;
-        &:hover {
-            transform: scale(1.07);
-        }
-    }
+        img{
+            @extend %formato-img;
+            &:hover {
+             transform: scale(1.07);
+            }
+         }
   }
 /* PARILLEROS Y HORNOS */
   .parrafo-parrillerosyhorno {
     text-align: center;
-    font-size: 1.5em;
-    margin: 30px;
+    @extend %formato-p
   }
+
   .imagenes-parrilleros {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    @include grid-template-columns;
     gap: 20px;
     justify-items: center;
     img {
@@ -90,13 +81,10 @@ h2{
 /* CORTE LASER */
 .parrafo-cortelaser {
     text-align: center;
-    font-size: 1.5em;
-    margin: 30px;
+    @extend %formato-p
   }
   .imagenes-cortelaser {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    @include grid-template-columns;
     gap: 20px;
     justify-items: center;
     img {
