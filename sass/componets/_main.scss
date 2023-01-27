@@ -1,6 +1,7 @@
 /*-------INDEX--------*/
 h2{
     margin-top: 40px;
+    padding: 20px;
 }
 .titulo{
     @extend %formatoh1
@@ -24,6 +25,7 @@ h2{
     @include sizes(30px, 20px);
     @include flex-center;
     gap: 50px;
+    justify-content: center;
 
     .imagen-index {
         box-shadow: 0px 0px 10px black;  
