@@ -119,10 +119,33 @@
  }
 
 @media only screen and (max-width: 576px) {
-body{
+  body{
+      .imagen-ejemplosflex {
+        width: 80%;
+        height: 80%;
+        }
+      .imagen-ejemplosflex-reverse {
+        width: 80%;
+        height: 80%;
+        }
+      .imagen-ejemplos {
+          .imagen-index {
+            width: 70%;
+            height: 80%;
+            box-shadow: 0px 0px 10px black;  
+          }
+         }
       .videos-ejemplos iframe {
            height: 315px;
            width: 450px;
          }
     }
-}
+     /*CONTACTOS*/
+  .contactos {
+      form{
+         fieldset {
+             padding: 50px;
+            }
+          }
+      }
+    }
