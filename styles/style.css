@@ -346,10 +346,14 @@ h2 {
   body .imagen-ejemplosflex {
     width: 80%;
     height: 80%;
+    margin: 60px;
+    padding: 0px;
   }
   body .imagen-ejemplosflex-reverse {
     width: 80%;
     height: 80%;
+    margin: 60px;
+    padding: 0px;
   }
   body .imagen-ejemplos .imagen-index {
     width: 70%;

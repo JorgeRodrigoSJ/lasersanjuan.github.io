@@ -123,17 +123,19 @@
       .imagen-ejemplosflex {
         width: 80%;
         height: 80%;
-        }
+        @include sizes(60px, 0px); 
+      }
       .imagen-ejemplosflex-reverse {
         width: 80%;
         height: 80%;
-        }
+        @include sizes(60px, 0px);
+      } 
       .imagen-ejemplos {
           .imagen-index {
             width: 70%;
             height: 80%;
             box-shadow: 0px 0px 10px black;  
-          }
+           }
          }
       .videos-ejemplos iframe {
            height: 315px;
