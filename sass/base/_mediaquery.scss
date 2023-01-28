@@ -123,12 +123,18 @@
       .imagen-ejemplosflex {
         width: 80%;
         height: 80%;
-        @include sizes(60px, 0px); 
+        @include sizes(40px, 0px); 
+        p{
+        padding: 0px;  
+        }
       }
       .imagen-ejemplosflex-reverse {
         width: 80%;
         height: 80%;
-        @include sizes(60px, 0px);
+        @include sizes(40px, 0px);
+        p{
+          padding: 0px;  
+        }
       } 
       .imagen-ejemplos {
           .imagen-index {
