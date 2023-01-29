@@ -43,5 +43,8 @@ $colorheader:#A45C40;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  
+}
+@mixin anchoyalto ($width, $height){
+  width: $width;
+  height: $height;
 }

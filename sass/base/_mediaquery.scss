@@ -31,8 +31,7 @@
 
   %formatoh1 {
     font-size: 1.6rem; 
-    margin: 0px;
-    padding: 20px;
+    @include sizes(0px,20px);
     margin-top: 10px;
     }
 
@@ -49,23 +48,19 @@
           padding: 20px;
           }
         .imagen-ejemplosflex {
-          margin: 0px;
-          padding: 10px;
+          @include sizes(0px,10px);
           flex-direction: column;
           }
         .imagen-ejemplosflex-reverse {
-          margin: 0px;
-          padding: 10px;
+          @include sizes(0px,10px);
           flex-direction: column-reverse;
           }
         .imagen-ejemplos {
-          margin: 0px;
-          padding: 10px;
+          @include sizes(0px,10px);
           flex-direction: column;
           align-items: center;
             .imagen-index {
-              width: 90%;
-              height: 90%;
+              @include anchoyalto(80%,80%);
               box-shadow: 0px 0px 10px black;  
             }
            }
@@ -74,8 +69,7 @@
              align-items: center;
            }
         .videos-ejemplos iframe {
-             height: 315px;
-             width: 560px;
+          @include anchoyalto(560px,315px);
            }
       }
 
@@ -122,8 +116,7 @@
  
   body{
       .header-nav {
-        width: 100%;
-        height: 80%;
+        @include anchoyalto(100%,80%);
       }
       .navbar-nav{
         flex-direction: column;
@@ -131,36 +124,33 @@
       }
            
       .imagen-ejemplosflex {
-        width: 80%;
-        height: 80%;
+        @include anchoyalto(80%,80%);
         @include sizes(40px, 0px); 
         p{
-        padding: 0px;  
+        padding: 0px; 
+        margin-top: 20px; 
         }
       }
       .imagen-ejemplosflex-reverse {
-        width: 80%;
-        height: 80%;
+        @include anchoyalto(80%,80%);
         @include sizes(40px, 0px);
         p{
-          padding: 0px;  
+          padding: 0px; 
+          margin-top: 20px; 
         }
       } 
       .imagen-ejemplos {
           .imagen-index {
-            width: 70%;
-            height: 80%;
+            @include anchoyalto(70%,80%);
             box-shadow: 0px 0px 10px black;  
            }
          }
       .videos-ejemplos iframe {
-           height: 315px;
-           width: 450px;
+        @include anchoyalto(450px,315px)
          }
     }
     .pie-pagina{
-      width: 100%;
-      height: 80%;
+      @include anchoyalto(100%,80%)
     }
      /*CONTACTOS*/
   .contactos {
