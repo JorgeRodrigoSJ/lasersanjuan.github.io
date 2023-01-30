@@ -166,12 +166,12 @@ h2 {
   flex-direction: column;
 }
 .contactos a {
-  padding: 2%;
   display: flex;
   justify-content: center;
 }
 .contactos a img {
-  width: 10%;
+  width: 100px;
+  margin: 30px;
 }
 .contactos a img:hover {
   transform: scale(1.07);
@@ -400,7 +400,7 @@ h2 {
   }
   /*CONTACTOS*/
   .contactos form fieldset {
-    padding: 50px;
+    width: 65%;
   }
 }
 
