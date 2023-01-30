@@ -102,6 +102,17 @@ h2{
     color: #C38370;
     display: flex;
     flex-direction: column;
+    a{
+        padding: 2%;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 10%;
+            &:hover{
+                transform: scale(1.07);
+            } 
+        }  
+    }
     form{
         display: flex;
         justify-content: center;

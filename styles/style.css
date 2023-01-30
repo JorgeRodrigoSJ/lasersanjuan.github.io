@@ -13,6 +13,7 @@
   margin: 50px;
   color: black;
   font-weight: bold;
+  text-align: justify;
 }
 
 .imagenes-cortelaser img, .imagenes-parrilleros img, .imagenes-fogoneros img {
@@ -26,6 +27,7 @@
   padding: 20px;
   font-size: 1.6rem;
   letter-spacing: 1px;
+  text-align: justify;
 }
 
 .videos-ejemplos iframe {
@@ -161,6 +163,17 @@ h2 {
   color: #C38370;
   display: flex;
   flex-direction: column;
+}
+.contactos a {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+.contactos a img {
+  width: 10%;
+}
+.contactos a img:hover {
+  transform: scale(1.07);
 }
 .contactos form {
   display: flex;
