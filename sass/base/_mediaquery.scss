@@ -50,10 +50,12 @@
         .imagen-ejemplosflex {
           @include sizes(0px,10px);
           flex-direction: column;
+          overflow: hidden;
           }
         .imagen-ejemplosflex-reverse {
           @include sizes(0px,10px);
           flex-direction: column-reverse;
+          overflow: hidden;
           }
         .imagen-ejemplos {
           @include sizes(0px,10px);
@@ -126,6 +128,7 @@
       .imagen-ejemplosflex {
         @include anchoyalto(80%,80%);
         @include sizes(40px, 0px); 
+        overflow: hidden;
         img{
           width: 90%;
           margin: 10px;
@@ -138,6 +141,7 @@
       .imagen-ejemplosflex-reverse {
         @include anchoyalto(80%,80%);
         @include sizes(40px, 0px);
+        overflow: hidden;
         img{
           width: 90%;
           margin: 10px;

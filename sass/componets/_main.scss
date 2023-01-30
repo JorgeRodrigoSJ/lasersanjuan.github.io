@@ -14,6 +14,7 @@ h2{
 .imagen-ejemplosflex {
     @include flex-center;
     width: 90%;
+    overflow: hidden;
         p{
             @extend %formato-p;
             width: 90%; 
@@ -22,6 +23,7 @@ h2{
 .imagen-ejemplosflex-reverse{
     @include flex-center;
     width: 90%;
+    overflow: hidden;
     p{
         @extend %formato-p;
     }
