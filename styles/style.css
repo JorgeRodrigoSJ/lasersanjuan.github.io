@@ -73,6 +73,7 @@ body header .navbar-collapse {
 h2 {
   margin-top: 40px;
   padding: 20px;
+  text-align: justify;
 }
 
 .imagen-ejemplosflex {
