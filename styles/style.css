@@ -88,10 +88,12 @@ h2 {
 .imagen-ejemplosflex {
   display: flex;
   align-items: center;
-  width: 90%;
-  overflow: hidden;
-  margin: 20px;
+  margin: 30px;
   gap: 30px;
+  overflow: hidden;
+}
+.imagen-ejemplosflex .imagen-animacion {
+  width: 35%;
 }
 .imagen-ejemplosflex p {
   width: 90%;
@@ -100,11 +102,17 @@ h2 {
 .imagen-ejemplosflex-reverse {
   display: flex;
   align-items: center;
-  width: 90%;
-  overflow: hidden;
-  margin-left: 20px;
   gap: 30px;
+  margin: 30px;
+  overflow: hidden;
 }
+.imagen-ejemplosflex-reverse .imagen-animacion {
+  width: 35%;
+}
+.imagen-ejemplosflex-reverse p {
+  width: 90%;
+}
+
 .imagen-ejemplos {
   margin: 30px;
   padding: 20px;
@@ -313,13 +321,25 @@ h2 {
     margin: 0px;
     padding: 10px;
     flex-direction: column;
+  }
+  body .imagen-ejemplosflex .imagen-animacion {
+    width: 80%;
     overflow: hidden;
+  }
+  body .imagen-ejemplosflex p {
+    width: 90%;
   }
   body .imagen-ejemplosflex-reverse {
     margin: 0px;
     padding: 10px;
     flex-direction: column-reverse;
+  }
+  body .imagen-ejemplosflex-reverse .imagen-animacion {
+    width: 80%;
     overflow: hidden;
+  }
+  body .imagen-ejemplosflex-reverse p {
+    width: 90%;
   }
   body .imagen-ejemplos {
     margin: 0px;
@@ -331,6 +351,7 @@ h2 {
     width: 80%;
     height: 80%;
     box-shadow: 0px 0px 10px black;
+    overflow: hidden;
   }
   body .videos-ejemplos {
     flex-direction: column;
@@ -385,6 +406,12 @@ h2 {
     flex-direction: column;
     row-gap: 15px;
   }
+  body .parrafo-h1 {
+    width: 90%;
+  }
+  body .parrafo-h2 {
+    width: 90%;
+  }
   body .imagen-ejemplosflex {
     width: 80%;
     height: 80%;
@@ -392,7 +419,7 @@ h2 {
     padding: 0px;
     overflow: hidden;
   }
-  body .imagen-ejemplosflex img {
+  body .imagen-ejemplosflex .imagen-animacion {
     width: 90%;
     margin: 10px;
   }
@@ -407,7 +434,7 @@ h2 {
     padding: 0px;
     overflow: hidden;
   }
-  body .imagen-ejemplosflex-reverse img {
+  body .imagen-ejemplosflex-reverse .imagen-animacion {
     width: 90%;
     margin: 10px;
   }
@@ -422,7 +449,8 @@ h2 {
   }
   body .videos-ejemplos iframe {
     width: 90%;
-    height: 90%;
+    height: 80%;
+    margin: 20px;
   }
   .pie-pagina {
     width: 100%;

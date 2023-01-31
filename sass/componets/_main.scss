@@ -13,10 +13,12 @@ h2{
 }
 .imagen-ejemplosflex {
     @include flex-center;
-    width: 90%;
-    overflow: hidden;
-    margin: 20px;
+    margin: 30px;
     gap: 30px;
+    overflow: hidden;
+         .imagen-animacion{
+             width: 35%;
+         }
         p{
             @extend %formato-p;
             width: 90%; 
@@ -24,13 +26,16 @@ h2{
     }
 .imagen-ejemplosflex-reverse{
     @include flex-center;
-    width: 90%;
-    overflow: hidden;
-    margin-left: 20px;
     gap: 30px;
-    p{
-        @extend %formato-p;
-    }
+    margin: 30px;
+    overflow: hidden;
+         .imagen-animacion{
+              width: 35%;
+         }
+         p{
+             @extend %formato-p;
+             width: 90%;
+         }
  }
 .imagen-ejemplos{
     @include sizes(30px, 20px);

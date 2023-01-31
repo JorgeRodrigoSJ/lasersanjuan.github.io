@@ -17,7 +17,6 @@
                 }
               }
         }
-  
     }
 
   @keyframes animacion {
@@ -27,7 +26,8 @@
       100% {
         transform: scale(1);
       }
-    }  
+    }
+     
 
   %formatoh1 {
     font-size: 1.6rem; 
@@ -50,20 +50,33 @@
         .imagen-ejemplosflex {
           @include sizes(0px,10px);
           flex-direction: column;
-          overflow: hidden;
-          }
+          .imagen-animacion{
+            width: 80%;
+            overflow: hidden;
+            }
+            p{
+              width: 90%;
+            }  
+        }
         .imagen-ejemplosflex-reverse {
           @include sizes(0px,10px);
           flex-direction: column-reverse;
-          overflow: hidden;
-          }
+          .imagen-animacion{
+            width: 80%;
+            overflow: hidden;
+            }
+            p{
+              width: 90%; 
+            }    
+        }
         .imagen-ejemplos {
           @include sizes(0px,10px);
           flex-direction: column;
           align-items: center;
             .imagen-index {
               @include anchoyalto(80%,80%);
-              box-shadow: 0px 0px 10px black;  
+              box-shadow: 0px 0px 10px black;
+              overflow: hidden;  
             }
            }
         .videos-ejemplos {
@@ -124,12 +137,17 @@
         flex-direction: column;
         row-gap: 15px;
       }
-           
+      .parrafo-h1{
+        width: 90%;
+      }
+      .parrafo-h2{
+        width: 90%;
+      }
       .imagen-ejemplosflex {
         @include anchoyalto(80%,80%);
-        @include sizes(40px, 0px); 
-        overflow: hidden;
-        img{
+        @include sizes(40px, 0px);
+        overflow: hidden;  
+        .imagen-animacion {
           width: 90%;
           margin: 10px;
         }
@@ -141,8 +159,8 @@
       .imagen-ejemplosflex-reverse {
         @include anchoyalto(80%,80%);
         @include sizes(40px, 0px);
-        overflow: hidden;
-        img{
+        overflow: hidden; 
+        .imagen-animacion{
           width: 90%;
           margin: 10px;
         }
@@ -154,11 +172,14 @@
       .imagen-ejemplos {
           .imagen-index {
             @include anchoyalto(80%,80%);
-            box-shadow: 0px 0px 10px black;  
+            box-shadow: 0px 0px 10px black; 
            }
          }
-      .videos-ejemplos iframe {
-        @include anchoyalto(90%,90%)
+      .videos-ejemplos{
+        iframe{
+          @include anchoyalto(90%,80%);
+          margin: 20px;
+          }
          }
     }
     .pie-pagina{
