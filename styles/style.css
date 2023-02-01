@@ -458,7 +458,8 @@ h2 {
   }
   /*CONTACTOS*/
   .contactos form fieldset {
-    width: 65%;
+    padding: 15px;
+    width: 90%;
   }
 }
 
