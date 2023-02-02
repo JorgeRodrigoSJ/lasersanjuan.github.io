@@ -5,11 +5,12 @@ $colorheader:#A45C40;
 
 %formatoh1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 50px;
     color:$negro;
     font-weight: bold; 
     text-align: justify;
+    letter-spacing: 2px;
   }
 
 %formato-img {
@@ -21,8 +22,8 @@ $colorheader:#A45C40;
 
 %formato-p {
   padding: 20px;
-  font-size: 1.6rem;
-  letter-spacing: 1px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
   text-align: justify;
 }
 

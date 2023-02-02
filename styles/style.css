@@ -7,13 +7,14 @@
   box-sizing: border-box;
 }
 
-h1 {
+.titulo, h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 50px;
   color: black;
   font-weight: bold;
   text-align: justify;
+  letter-spacing: 2px;
 }
 
 .imagenes-cortelaser img, .imagenes-parrilleros img, .imagenes-fogoneros img {
@@ -25,8 +26,8 @@ h1 {
 
 .parrafo-cortelaser, .parrafo-parrillerosyhorno, .parrafo-fogonero, .imagen-ejemplos p, .imagen-ejemplosflex-reverse p, .imagen-ejemplosflex p {
   padding: 20px;
-  font-size: 1.6rem;
-  letter-spacing: 1px;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
   text-align: justify;
 }
 
@@ -58,6 +59,11 @@ body header .navbar-collapse {
   justify-content: center;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
 .logo-header {
   animation: ease-in animacion 1s;
 }
@@ -72,17 +78,15 @@ body header .navbar-collapse {
 }
 /*-------INDEX--------*/
 h2 {
+  font-size: 1.5rem;
   margin-top: 40px;
   padding: 20px;
   text-align: justify;
+  letter-spacing: 2px;
 }
 
 .titulo {
   text-align: center;
-  font-size: 2rem;
-  margin: 50px;
-  color: black;
-  font-weight: bold;
 }
 
 .imagen-ejemplosflex {
@@ -123,6 +127,7 @@ h2 {
 }
 .imagen-ejemplos .imagen-index {
   box-shadow: 0px 0px 10px black;
+  transition: 0.1s;
 }
 .imagen-ejemplos .imagen-index:hover {
   transform: scale(1.07);
@@ -147,6 +152,9 @@ h2 {
   gap: 20px;
   justify-items: center;
 }
+.imagenes-fogoneros img {
+  transition: 0.1s;
+}
 .imagenes-fogoneros img:hover {
   transform: scale(1.07);
 }
@@ -163,6 +171,9 @@ h2 {
   gap: 20px;
   justify-items: center;
 }
+.imagenes-parrilleros img {
+  transition: 0.1s;
+}
 .imagenes-parrilleros img:hover {
   transform: scale(1.07);
 }
@@ -178,6 +189,9 @@ h2 {
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
   justify-items: center;
+}
+.imagenes-cortelaser img {
+  transition: 0.1s;
 }
 .imagenes-cortelaser img:hover {
   transform: scale(1.07);
@@ -245,12 +259,12 @@ h2 {
 .grupo-1 h2 {
   color: black;
   margin-bottom: 25px;
-  font-size: 40px;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 .grupo-1 p {
   color: black;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-bottom: 10px;
 }
 .grupo-1 .red-social a {
@@ -269,11 +283,50 @@ h2 {
 }
 
 .grupo-2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 15px 10px;
   text-align: center;
 }
 
+@media only screen and (max-width: 1315px) {
+  .imagen-ejemplos {
+    margin: 0px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imagen-ejemplos .imagen-index {
+    width: 60%;
+    height: 60%;
+    box-shadow: 0px 0px 10px black;
+  }
+}
+@media only screen and (max-width: 1220px) {
+  /*fogoneros*/
+  .imagenes-fogoneros {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+  }
+  /*parrilleros y hornos*/
+  .imagenes-parrilleros {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  /*corte laser*/
+  .imagenes-cortelaser {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  /*contactos*/
+  .fieldset {
+    margin: 20px 50px 0 0px;
+    flex-direction: column;
+  }
+  .contactos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media only screen and (max-width: 768px) {
   /*index*/
   .container-fluid {
@@ -300,8 +353,8 @@ h2 {
       transform: scale(1);
     }
   }
-  h1 {
-    font-size: 1.6rem;
+  h1, .titulo {
+    font-size: 1.4rem;
     margin: 0px;
     padding: 20px;
     margin-top: 10px;
@@ -315,7 +368,7 @@ h2 {
     margin: 0px;
   }
   body h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     padding: 20px;
   }
   body .imagen-ejemplosflex {
@@ -342,18 +395,6 @@ h2 {
   body .imagen-ejemplosflex-reverse p {
     width: 90%;
   }
-  body .imagen-ejemplos {
-    margin: 0px;
-    padding: 10px;
-    flex-direction: column;
-    align-items: center;
-  }
-  body .imagen-ejemplos .imagen-index {
-    width: 80%;
-    height: 80%;
-    box-shadow: 0px 0px 10px black;
-    overflow: hidden;
-  }
   body .videos-ejemplos {
     flex-direction: column;
     align-items: center;
@@ -373,30 +414,6 @@ h2 {
   .grupo-1 figure img {
     width: 180px;
   }
-  /*fogoneros*/
-  .imagenes-fogoneros {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-  }
-  /*parrilleros y hornos*/
-  .imagenes-parrilleros {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-  }
-  /*corte laser*/
-  .imagenes-cortelaser {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-  }
-  /*contactos*/
-  .fieldset {
-    margin: 20px 50px 0 0px;
-    flex-direction: column;
-  }
-  .contactos {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 @media only screen and (max-width: 576px) {
   body .header-nav {
@@ -408,9 +425,11 @@ h2 {
     row-gap: 15px;
   }
   body .parrafo-h1 {
+    margin: auto;
     width: 90%;
   }
   body .parrafo-h2 {
+    margin: auto;
     width: 90%;
   }
   body .imagen-ejemplosflex {
@@ -444,8 +463,8 @@ h2 {
     margin-top: 20px;
   }
   body .imagen-ejemplos .imagen-index {
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
     box-shadow: 0px 0px 10px black;
   }
   body .videos-ejemplos iframe {

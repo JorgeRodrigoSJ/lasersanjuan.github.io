@@ -22,7 +22,9 @@ body{
 }
 
 h1{
-    @extend %formatoh1
+    @extend %formatoh1;
+    display: flex;
+    justify-content: center;
     }
 
 

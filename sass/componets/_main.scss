@@ -1,15 +1,14 @@
 /*-------INDEX--------*/
 h2{
+    font-size: 1.5rem;
     margin-top: 40px;
     padding: 20px;
-    text-align: justify
+    text-align: justify;
+    letter-spacing: 2px;
 }
 .titulo{
+    @extend %formatoh1;
     text-align: center;
-    font-size: 2rem;
-    margin: 50px;
-    color:$negro;
-    font-weight: bold;
 }
 .imagen-ejemplosflex {
     @include flex-center;
@@ -44,9 +43,10 @@ h2{
     justify-content: center;
 
     .imagen-index {
-        box-shadow: 0px 0px 10px black;  
+        box-shadow: 0px 0px 10px black; 
+        transition: .10s;
         &:hover {
-            transform: scale(1.07);
+            transform: scale(1.07); 
             } 
         }
     p {
@@ -74,6 +74,7 @@ h2{
     justify-items: center;
         img{
             @extend %formato-img;
+            transition: .10s;
             &:hover {
              transform: scale(1.07);
             }
@@ -91,6 +92,7 @@ h2{
     justify-items: center;
     img {
         @extend %formato-img;
+        transition: .10s;
         &:hover{
             transform: scale(1.07);
         }
@@ -107,6 +109,7 @@ h2{
     justify-items: center;
     img {
         @extend %formato-img;
+        transition: .10s;
         &:hover{
             transform: scale(1.07);
         }
