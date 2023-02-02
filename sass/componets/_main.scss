@@ -1,141 +1,209 @@
 /*-------INDEX--------*/
-h2{
+h2 {
     font-size: 1.5rem;
     margin-top: 40px;
     padding: 20px;
     text-align: justify;
     letter-spacing: 2px;
 }
-.titulo{
+
+.titulo {
     @extend %formatoh1;
     text-align: center;
 }
+
+.banner {
+    .banner_{
+        background: fixed;
+        height: 700px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+}
+
+.banner::before {
+    height: 100%;
+    width: 100%;
+    background: #C38370;
+    opacity: 0.7;
+}
+
+.banner__info {
+    padding: 0.3em;
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: aliceblue;
+    margin: auto;
+}
+
+.banner__title {
+    line-height: 1.5;
+    font-size: 2em;
+}
+
+.banner__p {
+    line-height: 2;
+    font-size: 0.9em;
+}
+
+
+
 .imagen-ejemplosflex {
     @include flex-center;
     margin: 30px;
     gap: 30px;
     overflow: hidden;
-         .imagen-animacion{
-             width: 35%;
-         }
-        p{
-            @extend %formato-p;
-            width: 90%; 
-         }
+
+    .imagen-animacion {
+        width: 35%;
     }
-.imagen-ejemplosflex-reverse{
+
+    p {
+        @extend %formato-p;
+        width: 90%;
+    }
+}
+
+.imagen-ejemplosflex-reverse {
     @include flex-center;
     gap: 30px;
     margin: 30px;
     overflow: hidden;
-         .imagen-animacion{
-              width: 35%;
-         }
-         p{
-             @extend %formato-p;
-             width: 90%;
-         }
- }
-.imagen-ejemplos{
+
+    .imagen-animacion {
+        width: 35%;
+    }
+
+    p {
+        @extend %formato-p;
+        width: 90%;
+    }
+}
+
+.imagen-ejemplos {
     @include sizes(30px, 20px);
     @include flex-center;
     gap: 50px;
     justify-content: center;
 
     .imagen-index {
-        box-shadow: 0px 0px 10px black; 
+        box-shadow: 0px 0px 10px black;
         transition: .10s;
+
         &:hover {
-            transform: scale(1.07); 
-            } 
+            transform: scale(1.07);
         }
+    }
+
     p {
-        @extend %formato-p   
+        @extend %formato-p
     }
 }
-.videos-ejemplos{
+
+.videos-ejemplos {
     @include sizes(30px, 20px);
     @include flex-center;
     justify-content: space-evenly;
     gap: 80px;
-    iframe{
+
+    iframe {
         @extend %iframe
     }
 }
+
 /* FOGONEROS */
 .parrafo-fogonero {
     text-align: center;
     @extend %formato-p
-    }
+}
 
-  .imagenes-fogoneros {
+.imagenes-fogoneros {
     @include grid-template-columns;
     gap: 20px;
     justify-items: center;
-        img{
-            @extend %formato-img;
-            transition: .10s;
-            &:hover {
-             transform: scale(1.07);
-            }
-         }
-  }
-/* PARILLEROS Y HORNOS */
-  .parrafo-parrillerosyhorno {
-    text-align: center;
-    @extend %formato-p
-  }
 
-  .imagenes-parrilleros {
-    @include grid-template-columns;
-    gap: 20px;
-    justify-items: center;
     img {
         @extend %formato-img;
         transition: .10s;
-        &:hover{
+
+        &:hover {
             transform: scale(1.07);
         }
-      }
-  }
+    }
+}
+
+/* PARILLEROS Y HORNOS */
+.parrafo-parrillerosyhorno {
+    text-align: center;
+    @extend %formato-p
+}
+
+.imagenes-parrilleros {
+    @include grid-template-columns;
+    gap: 20px;
+    justify-items: center;
+
+    img {
+        @extend %formato-img;
+        transition: .10s;
+
+        &:hover {
+            transform: scale(1.07);
+        }
+    }
+}
+
 /* CORTE LASER */
 .parrafo-cortelaser {
     text-align: center;
     @extend %formato-p
-  }
-  .imagenes-cortelaser {
+}
+
+.imagenes-cortelaser {
     @include grid-template-columns;
     gap: 20px;
     justify-items: center;
+
     img {
         @extend %formato-img;
         transition: .10s;
-        &:hover{
+
+        &:hover {
             transform: scale(1.07);
         }
-      }
-  }
-  /*CONTACTOS*/
+    }
+}
+
+/*CONTACTOS*/
 .contactos {
     margin: 20px;
     color: #C38370;
     display: flex;
     flex-direction: column;
-    a{
+
+    a {
         display: flex;
         justify-content: center;
-        img{
+
+        img {
             width: 100px;
             margin: 30px;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.07);
-            } 
-        }  
+            }
+        }
     }
-   form{
+
+    form {
         display: flex;
         justify-content: center;
         width: 95%;
+
         fieldset {
             width: 50%;
             padding: 20px;
@@ -147,4 +215,4 @@ h2{
             flex-direction: column;
         }
     }
-  }
+}

@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-.titulo, h1 {
+.titulo, body h1 {
   text-align: center;
   font-size: 1.5rem;
   margin: 50px;
@@ -58,10 +58,41 @@ body header .nav-link:hover {
 body header .navbar-collapse {
   justify-content: center;
 }
-
-h1 {
+body h1 {
   display: flex;
   justify-content: center;
+}
+body .banner {
+  background: url("/img/banner.jpg") fixed center/cover;
+  height: 700px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .banner .banner__info {
+  padding: 0.3em;
+  position: absolute;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  color: black;
+  margin: auto;
+  border: 20px solid #A45C40;
+  opacity: 0.7;
+  background-color: #f6eee0;
+}
+body .banner .banner__title {
+  line-height: 1.5;
+  font-size: 2.5em;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+}
+body .banner .banner__p {
+  line-height: 2;
+  font-size: 1.8em;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .logo-header {
@@ -87,6 +118,42 @@ h2 {
 
 .titulo {
   text-align: center;
+}
+
+.banner .banner_ {
+  background: fixed;
+  height: 700px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner::before {
+  height: 100%;
+  width: 100%;
+  background: #C38370;
+  opacity: 0.7;
+}
+
+.banner__info {
+  padding: 0.3em;
+  position: absolute;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  color: aliceblue;
+  margin: auto;
+}
+
+.banner__title {
+  line-height: 1.5;
+  font-size: 2em;
+}
+
+.banner__p {
+  line-height: 2;
+  font-size: 0.9em;
 }
 
 .imagen-ejemplosflex {
@@ -353,7 +420,7 @@ h2 {
       transform: scale(1);
     }
   }
-  h1, .titulo {
+  body h1, .titulo {
     font-size: 1.4rem;
     margin: 0px;
     padding: 20px;

@@ -1,42 +1,86 @@
-body{
-     background-color:$colorbase;
-     font-family: "Raleway", sans-serif;
-      header{
-            background-color: $colorheader;
-            top: 0px;
-           @include anchoyalto (100%, 100%);
-            .nav-link {
-                color:$negro;
-                font-size: 1.6rem;
-                font-weight: bold;
-                &:hover{
-                    color: aliceblue;
-                    transform: scale(1.1);
-                }
-                }
-                .navbar-collapse{
-                  justify-content: center;
-                }
-              
-            }
-}
+body {
+  background-color: $colorbase;
+  font-family: "Raleway", sans-serif;
 
-h1{
+  header {
+    background-color: $colorheader;
+    top: 0px;
+    @include anchoyalto (100%, 100%);
+
+    .nav-link {
+      color: $negro;
+      font-size: 1.6rem;
+      font-weight: bold;
+
+      &:hover {
+        color: aliceblue;
+        transform: scale(1.1);
+      }
+    }
+
+    .navbar-collapse {
+      justify-content: center;
+    }
+  }
+
+  h1 {
     @extend %formatoh1;
     display: flex;
     justify-content: center;
+  }
+
+  .banner {
+    background: url("/img/banner.jpg") fixed center/cover;
+    height: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .banner__info {
+      padding: 0.3em;
+      position: absolute;
+      width: 100%;
+      max-width: 700px;
+      text-align: center;
+      color: $negro;
+      margin: auto;
+      border: 20px solid $colorheader;
+      opacity: 0.7;
+      background-color: #f6eee0;
     }
+
+     .banner__title {
+       line-height: 1.5;
+        font-size: 2.5em;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+
+      }
+
+      .banner__p {
+        line-height: 2;
+        font-size: 1.8em;
+        font-weight: bolder;
+        font-family: 'Times New Roman', Times, serif;
+      }
+  }
+
+}
+
+
 
 
 .logo-header {
-        animation: ease-in animacion 1s;
-      }
-      
-      @keyframes animacion {
-        0% {
-          transform: scale(0);
-        }
-        100% {
-          transform: scale(1);
-        }
-      }
+  animation: ease-in animacion 1s;
+}
+
+@keyframes animacion {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
