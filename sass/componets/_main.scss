@@ -1,4 +1,49 @@
 /*-------INDEX--------*/
+    h1 {
+      @extend %formatoh1;
+      display: flex;
+      justify-content: center;
+    }
+
+  .banner {
+    background: url("/img/banner.jpg") fixed center/cover;
+    height: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .banner__info {
+      padding: 0.3em;
+      position: absolute;
+      width: 100%;
+      max-width: 700px;
+      text-align: center;
+      color: $negro;
+      margin: auto;
+      border: 13px solid $colorheader;
+      opacity: 0.7;
+      background-color: #f6eee0;
+    }
+
+     .banner__title {
+        line-height: 1.5;
+        font-size: 2.5em;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+
+      }
+
+      .banner__p {
+        line-height: 2;
+        font-size: 1.8em;
+        font-weight: bolder;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify;
+      }
+  }
+
 h2 {
     font-size: 1.5rem;
     margin-top: 40px;
@@ -11,46 +56,6 @@ h2 {
     @extend %formatoh1;
     text-align: center;
 }
-
-.banner {
-    .banner_{
-        background: fixed;
-        height: 700px;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }   
-}
-
-.banner::before {
-    height: 100%;
-    width: 100%;
-    background: #C38370;
-    opacity: 0.7;
-}
-
-.banner__info {
-    padding: 0.3em;
-    position: absolute;
-    width: 100%;
-    max-width: 700px;
-    text-align: center;
-    color: aliceblue;
-    margin: auto;
-}
-
-.banner__title {
-    line-height: 1.5;
-    font-size: 2em;
-}
-
-.banner__p {
-    line-height: 2;
-    font-size: 0.9em;
-}
-
-
 
 .imagen-ejemplosflex {
     @include flex-center;
@@ -84,25 +89,10 @@ h2 {
     }
 }
 
-.imagen-ejemplos {
-    @include sizes(30px, 20px);
-    @include flex-center;
-    gap: 50px;
-    justify-content: center;
-
-    .imagen-index {
-        box-shadow: 0px 0px 10px black;
-        transition: .10s;
-
-        &:hover {
-            transform: scale(1.07);
-        }
-    }
-
-    p {
-        @extend %formato-p
-    }
+.carousel-inner{
+    margin: 60px 0 60px 0;
 }
+
 
 .videos-ejemplos {
     @include sizes(30px, 20px);

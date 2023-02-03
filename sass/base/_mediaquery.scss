@@ -1,15 +1,3 @@
-@media only screen and (max-width: 1315px){
-  .imagen-ejemplos {
-    @include sizes(0px,10px);
-    flex-direction: column;
-    align-items: center;
-      .imagen-index {
-        @include anchoyalto(60%,60%);
-        box-shadow: 0px 0px 10px black;  
-      }
-     }
-}
-
 @media only screen and (max-width: 1220px){
 /*fogoneros*/
 .imagenes-fogoneros {
@@ -37,8 +25,10 @@
 }
 }
 
+
 @media only screen and (max-width: 768px) {
     /*index*/
+    
     .container-fluid{
       display: flex;
       flex-direction: column;
@@ -82,6 +72,18 @@
       background-color:$colorbase;
       font-family: "Raleway", sans-serif;
       margin: 0px;
+        .banner{
+          .banner__info{
+            width: 70%;
+            height: 70%;
+          }
+          .banner__tittle{
+            font-size: 1.5em;
+          }
+          .banner__p{
+            font-size: 1.4em;
+          }
+        }
         h2 {
           font-size: 1.4rem;
           padding: 20px;
