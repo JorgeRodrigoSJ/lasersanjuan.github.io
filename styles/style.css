@@ -173,7 +173,11 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 80px;
+  flex-direction: column;
+  column-gap: 20px;
+}
+.videos-ejemplos .videos article {
+  margin: 35px;
 }
 /* FOGONEROS */
 .parrafo-fogonero {

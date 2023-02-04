@@ -99,7 +99,13 @@ h2 {
     @include sizes(30px, 20px);
     @include flex-center;
     justify-content: space-evenly;
-    gap: 80px;
+    flex-direction: column;
+    column-gap: 20px;
+     .videos{
+        article{
+            margin: 35px;
+        }
+     }
 
     iframe {
         @extend %iframe
