@@ -182,16 +182,15 @@
           margin-top: 20px; 
         }
       } 
-      .imagen-ejemplos {
-          .imagen-index {
-            @include anchoyalto(60%,60%);
-            box-shadow: 0px 0px 10px black; 
-           }
-         }
+      .carousel-item{
+        img{
+          height: 250px;
+        }
+        
+      }
       .videos-ejemplos{
         iframe{
           @include anchoyalto(90%,80%);
-          margin: 20px;
           }
          }
     }

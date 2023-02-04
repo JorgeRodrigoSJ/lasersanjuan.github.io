@@ -3,6 +3,7 @@
       @extend %formatoh1;
       display: flex;
       justify-content: center;
+      font-weight: lighter;
     }
 
   .banner {
@@ -115,10 +116,11 @@ h2 {
     @include grid-template-columns;
     gap: 20px;
     justify-items: center;
-
+   
     img {
         @extend %formato-img;
         transition: .10s;
+        border-radius: 5px;
 
         &:hover {
             transform: scale(1.07);
@@ -140,6 +142,7 @@ h2 {
     img {
         @extend %formato-img;
         transition: .10s;
+        border-radius: 5px;
 
         &:hover {
             transform: scale(1.07);
@@ -161,6 +164,7 @@ h2 {
     img {
         @extend %formato-img;
         transition: .10s;
+        border-radius: 5px;
 
         &:hover {
             transform: scale(1.07);

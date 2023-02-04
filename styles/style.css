@@ -85,6 +85,7 @@ body header .navbar-collapse {
 h1 {
   display: flex;
   justify-content: center;
+  font-weight: lighter;
 }
 
 .banner {
@@ -188,6 +189,7 @@ h2 {
 }
 .imagenes-fogoneros img {
   transition: 0.1s;
+  border-radius: 5px;
 }
 .imagenes-fogoneros img:hover {
   transform: scale(1.07);
@@ -207,6 +209,7 @@ h2 {
 }
 .imagenes-parrilleros img {
   transition: 0.1s;
+  border-radius: 5px;
 }
 .imagenes-parrilleros img:hover {
   transform: scale(1.07);
@@ -226,6 +229,7 @@ h2 {
 }
 .imagenes-cortelaser img {
   transition: 0.1s;
+  border-radius: 5px;
 }
 .imagenes-cortelaser img:hover {
   transform: scale(1.07);
@@ -495,15 +499,12 @@ h2 {
     padding: 0px;
     margin-top: 20px;
   }
-  body .imagen-ejemplos .imagen-index {
-    width: 60%;
-    height: 60%;
-    box-shadow: 0px 0px 10px black;
+  body .carousel-item img {
+    height: 250px;
   }
   body .videos-ejemplos iframe {
     width: 90%;
     height: 80%;
-    margin: 20px;
   }
   .pie-pagina {
     width: 100%;
