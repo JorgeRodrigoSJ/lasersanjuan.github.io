@@ -22,7 +22,7 @@
       text-align: center;
       color: $negro;
       margin: auto;
-      border: 13px solid $colorheader;
+      border: 13px solid $colorhero;
       opacity: 0.7;
       background-color: #f6eee0;
     }
@@ -181,7 +181,7 @@ h2 {
 /*CONTACTOS*/
 .contactos {
     margin: 20px;
-    color: #C38370;
+    color:$colorformcontactos;
     display: flex;
     flex-direction: column;
 
@@ -209,7 +209,7 @@ h2 {
             padding: 20px;
             font-size: 1.5rem;
             margin: 20px 80px 0 80px;
-            background-color: rgba(59, 44, 44, 0.2588235294);
+            background-color:$colorfieldset;
             border: 10px solid;
             display: flex;
             flex-direction: column;

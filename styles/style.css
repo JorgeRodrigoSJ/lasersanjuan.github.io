@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+/*$negro:black;
+$colorhover:#cd2314;
+$colorbase:#f6eee0;
+$colorheader:#A45C40;*/
+/*colores nuevos*/
 .titulo, h1 {
   text-align: center;
   font-size: 1.5rem;
@@ -37,11 +42,11 @@
 }
 
 body {
-  background-color: #f6eee0;
+  background-color: #d5d1cf;
   font-family: "Raleway", sans-serif;
 }
 body header {
-  background-color: #A45C40;
+  background-color: #7e6762;
   top: 0px;
   width: 100%;
   height: 100%;
@@ -55,14 +60,14 @@ body header .navbar-nav .nav-link {
   font-weight: bold;
   border: 5px solid black;
   border-radius: 15px;
-  background-color: rgb(226, 167, 89);
+  background-color: #e1e0de;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0.7;
 }
 body header .navbar-nav .nav-link:hover {
-  color: aliceblue;
+  color: #9b5f35;
   transform: scale(1.1);
 }
 body header .navbar-collapse {
@@ -104,7 +109,7 @@ h1 {
   text-align: center;
   color: black;
   margin: auto;
-  border: 13px solid #A45C40;
+  border: 13px solid #eaa353;
   opacity: 0.7;
   background-color: #f6eee0;
 }
@@ -242,7 +247,7 @@ h2 {
 /*CONTACTOS*/
 .contactos {
   margin: 20px;
-  color: #C38370;
+  color: #9b5f35;
   display: flex;
   flex-direction: column;
 }
@@ -267,7 +272,7 @@ h2 {
   padding: 20px;
   font-size: 1.5rem;
   margin: 20px 80px 0 80px;
-  background-color: rgba(59, 44, 44, 0.2588235294);
+  background-color: rgb(192, 184, 184);
   border: 10px solid;
   display: flex;
   flex-direction: column;
@@ -276,7 +281,7 @@ h2 {
 /*------FOOTER-----*/
 .pie-pagina {
   width: 100%;
-  background-color: #A45C40;
+  background-color: #7e6762;
 }
 
 .grupo-1 {
@@ -317,14 +322,16 @@ h2 {
   height: 80px;
   line-height: 80px;
   color: black;
-  background-color: #f6eee0;
+  background-color: #d5d1cf;
   text-align: center;
 }
 .grupo-1 .red-social a:hover {
-  color: #cd2314;
+  color: #e41926;
 }
-
-.grupo-2 {
+.grupo-1 .red-social .fa-facebook:hover {
+  color: blue;
+}
+.grupo-1 .grupo-2 {
   font-size: 1.3rem;
   padding: 15px 10px;
   text-align: center;
@@ -394,7 +401,7 @@ h2 {
     padding: 20px;
   }
   body {
-    background-color: #f6eee0;
+    background-color: #d5d1cf;
     font-family: "Raleway", sans-serif;
     margin: 0px;
   }

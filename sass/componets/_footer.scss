@@ -46,10 +46,16 @@
                     color: $colorhover;
                 }
             }
+            .fa-facebook{
+                &:hover{
+                    color: blue;
+                        }
+                    }
+             
         }
-    }
     .grupo-2 { 
         font-size: 1.3rem;
         padding: 15px 10px;
         text-align: center;      
         }
+    }

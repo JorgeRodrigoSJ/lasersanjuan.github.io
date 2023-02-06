@@ -14,13 +14,13 @@ body {
         font-weight: bold;
         border: 5px solid $negro;
         border-radius: 15px;
-        background-color:rgb(226 167 89);
+        background-color:$colorbotonnav;
         display: flex;
         align-items: center;
         justify-content: center;
         opacity: 0.7;
         &:hover {
-          color: aliceblue;
+          color: $colorhovernav;
           transform: scale(1.1);
         }
       }
