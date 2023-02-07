@@ -86,22 +86,22 @@
           @include sizes(0px,0px);
           flex-direction: column;
           .imagen-animacion{
-            width: 90%;
+            width: 100%;
             overflow: hidden;
             }
             p{
-              width: 90%;
+              width: 100%;
             }  
         }
         .imagen-ejemplosflex-reverse {
           @include sizes(0px,0px);
           flex-direction: column-reverse;
           .imagen-animacion{
-            width: 90%;
+            width: 100%;
             overflow: hidden;
             }
             p{
-              width: 90%; 
+              width: 100%; 
             }    
         }
 

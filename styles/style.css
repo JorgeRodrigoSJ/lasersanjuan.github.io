@@ -144,7 +144,7 @@ h2 {
 .imagen-ejemplosflex {
   display: flex;
   align-items: center;
-  margin: 20px;
+  margin: 10px;
   gap: 30px;
   overflow: hidden;
 }
@@ -152,21 +152,21 @@ h2 {
   width: 35%;
 }
 .imagen-ejemplosflex p {
-  width: 90%;
+  width: 100%;
 }
 
 .imagen-ejemplosflex-reverse {
   display: flex;
   align-items: center;
   gap: 30px;
-  margin: 20px;
+  margin: 10px;
   overflow: hidden;
 }
 .imagen-ejemplosflex-reverse .imagen-animacion {
   width: 35%;
 }
 .imagen-ejemplosflex-reverse p {
-  width: 90%;
+  width: 100%;
 }
 
 .carousel-inner {
@@ -419,11 +419,11 @@ h2 {
     flex-direction: column;
   }
   body .imagen-ejemplosflex .imagen-animacion {
-    width: 90%;
+    width: 100%;
     overflow: hidden;
   }
   body .imagen-ejemplosflex p {
-    width: 90%;
+    width: 100%;
   }
   body .imagen-ejemplosflex-reverse {
     margin: 0px;
@@ -431,11 +431,11 @@ h2 {
     flex-direction: column-reverse;
   }
   body .imagen-ejemplosflex-reverse .imagen-animacion {
-    width: 90%;
+    width: 100%;
     overflow: hidden;
   }
   body .imagen-ejemplosflex-reverse p {
-    width: 90%;
+    width: 100%;
   }
   body .videos-ejemplos {
     flex-direction: column;
