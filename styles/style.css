@@ -144,7 +144,7 @@ h2 {
 .imagen-ejemplosflex {
   display: flex;
   align-items: center;
-  margin: 30px;
+  margin: 20px;
   gap: 30px;
   overflow: hidden;
 }
@@ -159,7 +159,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 30px;
-  margin: 30px;
+  margin: 20px;
   overflow: hidden;
 }
 .imagen-ejemplosflex-reverse .imagen-animacion {
@@ -415,11 +415,11 @@ h2 {
   }
   body .imagen-ejemplosflex {
     margin: 0px;
-    padding: 10px;
+    padding: 0px;
     flex-direction: column;
   }
   body .imagen-ejemplosflex .imagen-animacion {
-    width: 80%;
+    width: 90%;
     overflow: hidden;
   }
   body .imagen-ejemplosflex p {
@@ -427,11 +427,11 @@ h2 {
   }
   body .imagen-ejemplosflex-reverse {
     margin: 0px;
-    padding: 10px;
+    padding: 0px;
     flex-direction: column-reverse;
   }
   body .imagen-ejemplosflex-reverse .imagen-animacion {
-    width: 80%;
+    width: 90%;
     overflow: hidden;
   }
   body .imagen-ejemplosflex-reverse p {
@@ -482,9 +482,9 @@ h2 {
     width: 95%;
   }
   body .imagen-ejemplosflex {
-    width: 80%;
-    height: 80%;
-    margin: 40px;
+    width: 90%;
+    height: 90%;
+    margin: 20px;
     padding: 0px;
     overflow: hidden;
   }
@@ -497,9 +497,9 @@ h2 {
     margin-top: 20px;
   }
   body .imagen-ejemplosflex-reverse {
-    width: 80%;
-    height: 80%;
-    margin: 40px;
+    width: 90%;
+    height: 90%;
+    margin: 20px;
     padding: 0px;
     overflow: hidden;
   }
