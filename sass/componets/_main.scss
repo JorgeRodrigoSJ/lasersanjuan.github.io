@@ -61,7 +61,7 @@ h2 {
 
 .imagen-ejemplosflex {
     @include flex-center;
-    margin: 20px;
+    margin: 10px;
     gap: 30px;
     overflow: hidden;
 
@@ -71,14 +71,14 @@ h2 {
 
     p {
         @extend %formato-p;
-        width: 90%;
+        width: 100%;
     }
 }
 
 .imagen-ejemplosflex-reverse {
     @include flex-center;
     gap: 30px;
-    margin: 20px;
+    margin: 10px;
     overflow: hidden;
 
     .imagen-animacion {
@@ -87,7 +87,7 @@ h2 {
 
     p {
         @extend %formato-p;
-        width: 90%;
+        width: 100%;
     }
 }
 
