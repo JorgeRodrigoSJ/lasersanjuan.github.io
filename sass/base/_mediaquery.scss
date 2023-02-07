@@ -77,8 +77,8 @@
       margin: 0px;
         .banner{
           .banner__info{
-            width: 70%;
-            height: 70%;
+            width: 65%;
+            height: 45%;
           }
           .banner__tittle{
             font-size: 1.5em;
@@ -140,6 +140,14 @@
 
 @media only screen and (max-width: 576px) {
  
+  %formatoh1 {
+    font-size: 1rem; 
+    }
+
+  %formato-p {
+    font-size: 0.8rem;
+    }
+
   body{
       .header-nav {
         @include anchoyalto(100%,80%);
