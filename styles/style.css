@@ -391,15 +391,6 @@ h2 {
       transform: scale(1);
     }
   }
-  h1, .titulo {
-    font-size: 1.4rem;
-    margin: 0px;
-    padding: 20px;
-    margin-top: 10px;
-  }
-  .imagen-ejemplosflex p, .imagen-ejemplosflex-reverse p, .parrafo-fogonero, .parrafo-parrillerosyhorno, .parrafo-cortelaser {
-    padding: 20px;
-  }
   body {
     background-color: #d5d1cf;
     font-family: "Raleway", sans-serif;
@@ -410,7 +401,7 @@ h2 {
     height: 35%;
   }
   body .banner .banner__title {
-    line-height: 4;
+    line-height: 0.8;
     font-size: 1em;
   }
   body .banner .banner__p {
@@ -520,9 +511,16 @@ h2 {
   body .carousel-item img {
     height: 250px;
   }
+  body .videos-ejemplos {
+    margin: 10px;
+    padding: 10px;
+  }
+  body .videos-ejemplos .videos article {
+    margin: 15px;
+  }
   body .videos-ejemplos iframe {
-    width: 90%;
-    height: 80%;
+    width: 95%;
+    height: 315px;
   }
   .pie-pagina {
     width: 100%;

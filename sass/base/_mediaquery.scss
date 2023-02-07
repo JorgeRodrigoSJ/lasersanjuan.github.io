@@ -59,18 +59,7 @@
         transform: scale(1);
       }
     }
-     
-
-  %formatoh1 {
-    font-size: 1.4rem; 
-    @include sizes(0px,20px);
-    margin-top: 10px;
-    }
-
-  %formato-p {
-    padding: 20px;
-    }
-
+    
   body{
       background-color:$colorbase;
       font-family: "Raleway", sans-serif;
@@ -81,7 +70,7 @@
             height: 35%;
           }
           .banner__title {
-            line-height: 4;
+            line-height: 0.8;
             font-size: 1em;
           }
           .banner__p{
@@ -197,11 +186,18 @@
         }
         
       }
-      .videos-ejemplos{
-        iframe{
-          @include anchoyalto(90%,80%);
-          }
+      .videos-ejemplos {
+        @include sizes(10px, 10px);
+         .videos{
+            article{
+                margin: 15px;
+            }
          }
+    
+        iframe {
+          @include anchoyalto(95%,315px)
+        }
+       }
     }
     .pie-pagina{
       @include anchoyalto(100%,80%)
