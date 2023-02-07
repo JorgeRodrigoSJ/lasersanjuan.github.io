@@ -67,14 +67,15 @@
         .banner{
           .banner__info{
             width: 60%;
-            height: 35%;
+            height: 150px;
           }
           .banner__title {
-            line-height: 0.8;
+            line-height: 1;
             font-size: 1em;
           }
           .banner__p{
             font-size: 0.9em;
+            margin-top: 20px;
           }
         }
         h2 {
@@ -131,7 +132,7 @@
 @media only screen and (max-width: 576px) {
  
   %formatoh1 {
-    font-size: 1rem; 
+    font-size: 1rem;
     }
 
   %formato-p {
@@ -148,18 +149,19 @@
       }
       .parrafo-h1{
         margin: auto;
+        margin-top: 20px;
         width: 90%;
       }
       .parrafo-h2{
        margin: auto;
-        width: 90%;
+        width: 95%;
       }
       .imagen-ejemplosflex {
         @include anchoyalto(80%,80%);
         @include sizes(40px, 0px);
         overflow: hidden;  
         .imagen-animacion {
-          width: 90%;
+          width: 95%;
           margin: 10px;
         }
         p{
