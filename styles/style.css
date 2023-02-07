@@ -115,14 +115,14 @@ h1 {
 }
 .banner .banner__title {
   line-height: 1.5;
-  font-size: 2.5em;
-  font-weight: 700;
+  font-size: 1.8em;
+  font-weight: bold;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
 }
 .banner .banner__p {
   line-height: 2;
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: bolder;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
@@ -406,17 +406,18 @@ h2 {
     margin: 0px;
   }
   body .banner .banner__info {
-    width: 65%;
-    height: 45%;
+    width: 60%;
+    height: 35%;
   }
-  body .banner .banner__tittle {
-    font-size: 1.5em;
+  body .banner .banner__title {
+    line-height: 4;
+    font-size: 1em;
   }
   body .banner .banner__p {
-    font-size: 1.4em;
+    font-size: 0.9em;
   }
   body h2 {
-    font-size: 1.4rem;
+    font-size: 0.8rem;
     padding: 20px;
   }
   body .imagen-ejemplosflex {

@@ -77,18 +77,19 @@
       margin: 0px;
         .banner{
           .banner__info{
-            width: 65%;
-            height: 45%;
+            width: 60%;
+            height: 35%;
           }
-          .banner__tittle{
-            font-size: 1.5em;
+          .banner__title {
+            line-height: 4;
+            font-size: 1em;
           }
           .banner__p{
-            font-size: 1.4em;
+            font-size: 0.9em;
           }
         }
         h2 {
-          font-size: 1.4rem;
+          font-size: 0.8rem;
           padding: 20px;
           }
         .imagen-ejemplosflex {
